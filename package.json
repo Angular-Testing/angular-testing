@@ -1,12 +1,13 @@
 {
-  "name": "angular-budget",
-  "version": "1.10.1",
-  "description": "Sample app for learning Angular testing.",
+  "name": "angular-testing",
+  "version": "1.12.0",
+  "description": "Aplicación ejemplo para curso con TrainingIT.",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@hotmail.com",
     "url": "https://twitter.com/albertobasalo"
   },
+  "homepage": "https://trainingit.es/curso-angular-testing/",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

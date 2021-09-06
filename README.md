@@ -1,4 +1,9 @@
-# [AngularBudget](https://angularbuilders.github.io/angular-budget/)
+# Angular Testing
+
+Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
+
+
+> clone of [angular-budget](https://angularbuilders.github.io/angular-budget/)
 
 ## Manage budgets for projects.
 
@@ -6,7 +11,7 @@
 
 This sample project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-[Read docs](https://github.com/angularbuilders/angular-budget/blob/main/docs/cli.md) to see how it was generated.
+[Read CLI docs](https://github.com/angularbuilders/angular-budget/blob/main/docs/cli.md) to see how it was generated.
 
 Run `npm i` after clone or fork
 
