@@ -22,8 +22,10 @@
       "@ab/global/*": ["./src/app/core/global/*"],
       "@ab/ui/*": ["./src/app/shared/ui/*"],
       "@ab/util/*": ["./src/app/shared/util/*"]
-    }
+    },
+    "types": ["jasmine"]
   },
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
