@@ -1,13 +1,13 @@
 {
   "name": "angular-testing",
   "version": "1.12.0",
-  "description": "Aplicación ejemplo para curso con TrainingIT.",
+  "description": "Aplicación ejemplo para curso de Angular Testing.",
   "author": {
     "name": "Alberto Basalo",
     "email": "albertobasalo@hotmail.com",
     "url": "https://twitter.com/albertobasalo"
   },
-  "homepage": "https://trainingit.es/curso-angular-testing/",
+  "homepage": "https://github.com/Angular-Testing/angular-testing",
   "license": "MIT",
   "scripts": {
     "ng": "ng",

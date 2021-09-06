@@ -2,7 +2,6 @@
 
 Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
 
-
 > clone of [angular-budget](https://angularbuilders.github.io/angular-budget/)
 
 ## Manage budgets for projects.
@@ -19,7 +18,7 @@ Run `npm i` after clone or fork
 
 Run `npm start` for a dev server.
 
-Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io). **🚧 PENDING**
+Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 Run `npm run lint` to fix or report lint failures
 
