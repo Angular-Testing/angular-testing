@@ -5,7 +5,7 @@ import {
   getClassForProjectStatus,
 } from './valueToCSS';
 
-describe('Bulma class based completed tasks', () => {
+fdescribe('Bulma class based completed tasks', () => {
   it('Should return "is-success" class for 1 completed task', () => {
     expect(getClassForCompletedCount(1)).toBe('is-success');
   });
