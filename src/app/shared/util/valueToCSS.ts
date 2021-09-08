@@ -7,7 +7,7 @@ export function getClassForProjectStatus(projectStatus: ProjectStatus): StatusCl
   ];
   return classes.find(c => projectStatus === c.projectStatus)?.class || 'is-info';
 }
-export function getClassForNotification(notification: NotificationStatus): StatusClass {
+export function getClassForNotificationStatus(notification: NotificationStatus): StatusClass {
   const classes: { class: StatusClass; notification: NotificationStatus }[] = [
     { class: 'is-warning', notification: 'warning' },
     { class: 'is-success', notification: 'success' },
@@ -18,6 +18,7 @@ export function getClassForNotification(notification: NotificationStatus): Statu
 export function getClassForPendingCount(pendingCount: number): StatusClass {
   return pendingCount > 0 ? 'is-danger' : 'is-info';
 }
+
 export function getClassForCompletedCount(completedCount: number): StatusClass {
   return completedCount > 0 ? 'is-success' : 'is-info';
 }
