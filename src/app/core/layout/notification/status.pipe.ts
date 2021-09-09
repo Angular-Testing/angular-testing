@@ -9,7 +9,9 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'status',
 })
 export class StatusPipe implements PipeTransform {
+  public transformer = getClassForNotificationStatus;
+
   transform(value: NotificationStatus, ...args: unknown[]): StatusClass {
-    return getClassForNotificationStatus(value);
+    return this.transformer(value);
   }
 }
