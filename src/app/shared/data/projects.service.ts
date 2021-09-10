@@ -12,7 +12,7 @@ export class ProjectsService {
 
   getProjects$(): Observable<Project[]> {
     return this.http
-      .get<{ data: Project[] }>(`${environment.apiHost}projects`)
+      .get<{ data: Project[] }>(`${environment.apiHost}projects/`)
       .pipe(map(res => res.data));
   }
 
@@ -24,7 +24,7 @@ export class ProjectsService {
 
   postProject$(project: Project): Observable<Project> {
     return this.http
-      .post<{ data: Project }>(`${environment.apiHost}projects`, project)
+      .post<{ data: Project }>(`${environment.apiHost}projects/`, project)
       .pipe(map(res => res.data));
   }
 
