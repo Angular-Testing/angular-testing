@@ -49,7 +49,7 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
     const input = 'not_found';
     let actual: HttpErrorResponse | unknown;
     beforeEach(() => {
-      service.getUserByid$(input).subscribe({
+      service.getUserById$(input).subscribe({
         next: data => {
           actual = undefined;
         },

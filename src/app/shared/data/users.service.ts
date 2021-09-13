@@ -20,7 +20,7 @@ export class UsersService {
       .pipe(map(res => res.data));
   }
 
-  public getUserByid$(userId: string): Observable<User> {
+  public getUserById$(userId: string): Observable<User> {
     return this.http
       .get<{ data: User }>(`${environment.apiHost}users/${userId}`)
       .pipe(map(res => res.data));
