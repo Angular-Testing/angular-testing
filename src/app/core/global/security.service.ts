@@ -35,7 +35,7 @@ export class SecurityService {
   }
 
   public loginWithCredentials(credentials: Credentials): void {
-    this.users.getTokenByCredentials(credentials).subscribe({
+    this.users.getTokenByCredentials$(credentials).subscribe({
       next: token => {
         const userId = this.getUserFromToken(token);
         this.securityStore.setLoggedIn(userId, token);
