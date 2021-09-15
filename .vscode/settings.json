@@ -26,5 +26,5 @@
   "eslint.validate": ["javascript", "typescript"],
   "files.eol": "\n",
   "spellright.language": ["en", "es"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "html", "typescript"]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "html"]
 }
