@@ -1,13 +1,12 @@
 # Angular Testing
 
+Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
+
 Visita las distintas ramas del proyecto para ver los cambios graduales
 [Rammas para cada video lección](https://github.com/Angular-Testing/angular-testing/branches)
 > Ejemplo: `git checkout 0.1-jasmine-karma`
 
-
-Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
-
-> cloned from [angular-budget](https://angularbuilders.github.io/angular-budget/)
+---
 
 ## Manage budgets for projects.
 
@@ -60,5 +59,6 @@ Basic CRUD for a list of projects. Each one with dates, status and budgeting con
 
 ## Credits
 
+Cloned from [angular-budget](https://angularbuilders.github.io/angular-budget/)
 Created by [Alberto Basalo](https://twitter.com/albertobasalo) to be used as a sample in his Angular Courses.
 Part of [Angular.builders](https://www.angular.builders)
