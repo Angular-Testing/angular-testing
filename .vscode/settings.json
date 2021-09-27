@@ -26,5 +26,11 @@
   "eslint.validate": ["javascript", "typescript"],
   "files.eol": "\n",
   "spellright.language": ["en", "es"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "html"]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext", "html"],
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "github.copilot.enable": {
+    "*": false
+  },
+  "window.zoomLevel": 2,
+  "editor.lineNumbers": "off"
 }
