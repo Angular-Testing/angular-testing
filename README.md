@@ -3,7 +3,7 @@
 Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
 
 Visita las distintas ramas del proyecto para ver los cambios graduales
-[Rammas para cada video lección](https://github.com/Angular-Testing/angular-testing/branches)
+[Ramas para cada video lección](https://github.com/Angular-Testing/angular-testing/branches)
 > Ejemplo: `git checkout 0.1-jasmine-karma`
 
 ---
