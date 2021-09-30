@@ -38,3 +38,36 @@ fdescribe('HomeComponent', () => {
     expect(spyHomeService.deleteProject).toHaveBeenCalledWith(expected);
   });
 });
+
+function findNativeEl<T>(fixture: ComponentFixture<T>, selector: string): HTMLElement | null {
+  const nativeElement = fixture.nativeElement.querySelector(selector);
+  return nativeElement;
+}
+function getTextContent<T>(fixture: ComponentFixture<T>, selector: string): string | null {
+  const nativeElement = findNativeEl(fixture, selector);
+  return nativeElement ? nativeElement.textContent : null;
+}
+
+fdescribe('GIVEN the Home component', () => {
+  let component: HomeComponent;
+  let fixture: ComponentFixture<HomeComponent>;
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      providers: [{ provide: HomeService, useValue: { loadProjectViews: () => {} } }],
+      declarations: [HomeComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    }).compileComponents();
+  });
+  describe('WHEN starts', () => {
+    beforeEach(() => {
+      fixture = TestBed.createComponent(HomeComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
+    });
+    it('SHOULD display the title ?', () => {});
+    it('SHOULD pass the title to the page component', () => {});
+    it('SHOULD include the ab-loading component', () => {});
+    it('SHOULD not include the ab-error component', () => {});
+    it('SHOULD not include the ab-projects component', () => {});
+  });
+});
