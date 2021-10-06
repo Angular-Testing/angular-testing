@@ -1,7 +1,9 @@
 describe('My First Test', () => {
   it('Visits the initial project page', () => {
-    cy.visit('/');
-    cy.contains('Welcome');
-    cy.contains('sandbox app is running!');
+    cy.visit('/'); // act
+    cy.contains('Angular Budget'); // act assert
+    cy.contains('Project Budget dashboard');
+    cy.get('a') // act
+      .should('contain', 'Angular Budget'); // assert
   });
 });
