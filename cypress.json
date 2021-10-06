@@ -1,11 +1,14 @@
 {
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "baseUrl": "http://localhost:4200",
+  "chromeWebSecurity": false,
   "fixturesFolder": "tests/e2e/fixtures",
   "integrationFolder": "tests/e2e/integration",
-  "pluginsFile": "tests/e2e/plugins/index.ts",
-  "supportFile": "tests/e2e/support/index.ts",
+  "pluginsFile": "tests/e2e/plugins/index.js",
+  "supportFile": "tests/e2e/support/index.js",
   "screenshotsFolder": "tests/output/screenshots",
   "videosFolder": "tests/output/videos",
-  "baseUrl": "http://localhost:4200",
+  "trashAssetsBeforeRuns": true,
   "viewportWidth": 1240,
   "viewportHeight": 740,
   "env": {
