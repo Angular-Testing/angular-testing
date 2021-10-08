@@ -28,14 +28,14 @@ export class SecurityService {
       .select$(s => s.userId)
       .pipe(
         switchMap(userId => {
-          if (userId) return this.users.getUserByid$(userId);
+          if (userId) return this.users.getUserById$(userId);
           else return of(undefined);
         })
       );
   }
 
   public loginWithCredentials(credentials: Credentials): void {
-    this.users.getTokenByCredentials(credentials).subscribe({
+    this.users.getTokenByCredentials$(credentials).subscribe({
       next: token => {
         const userId = this.getUserFromToken(token);
         this.securityStore.setLoggedIn(userId, token);

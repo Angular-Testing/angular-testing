@@ -10,7 +10,8 @@ import { User } from './models/user.model';
 export class UsersService {
   constructor(private http: HttpClient) {}
 
-  getTokenByCredentials(credentials: { email: string; password: string }): Observable<string> {
+  getTokenByCredentials$(credentials: { email: string; password: string }): Observable<string> {
+    // password should be encrypted before sending to server
     const params = new HttpParams()
       .append('email', encodeURIComponent(credentials.email))
       .append('password', encodeURIComponent(credentials.password));
@@ -19,7 +20,7 @@ export class UsersService {
       .pipe(map(res => res.data));
   }
 
-  public getUserByid$(userId: string): Observable<User> {
+  public getUserById$(userId: string): Observable<User> {
     return this.http
       .get<{ data: User }>(`${environment.apiHost}users/${userId}`)
       .pipe(map(res => res.data));

@@ -8,6 +8,6 @@ import { ProjectView } from '../models/project-view.model';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectsComponent {
-  @Input() projects: ProjectView[] | null = null;
+  @Input() projects!: ProjectView[] | null;
   @Output() delete = new EventEmitter<string>();
 }

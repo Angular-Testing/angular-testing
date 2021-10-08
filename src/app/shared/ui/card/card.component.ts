@@ -1,11 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  OnInit,
-  Output,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 
 export interface UserAction {
   caption: string;
@@ -24,10 +17,8 @@ export interface Card {
   styleUrls: ['./card.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CardComponent implements OnInit {
-  @Input() card!: Card;
-  @Output() actionClick = new EventEmitter<UserAction>();
+export class CardComponent {
+  @Input() public card!: Card;
+  @Output() public actionClick = new EventEmitter<UserAction>();
   constructor() {}
-
-  ngOnInit(): void {}
 }

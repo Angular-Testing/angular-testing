@@ -13,7 +13,7 @@ export interface Tag {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TagComponent implements OnInit {
-  @Input() tag!: Tag;
+  @Input() public tag!: Tag;
   constructor() {}
 
   ngOnInit(): void {}

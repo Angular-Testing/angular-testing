@@ -1,6 +1,10 @@
 <aside *ngIf="notification$ | async as notification"
-       class="notification py-2 {{ notification.status | status }} {{ ((hide$ | async) === true ? 'is-hidden':'') }} ">
-  <button class="delete button is-small {{ notification.status | status }} "
+       class="notification py-2
+        {{ notification.status | status }}
+        {{ ((hide$ | async) === true ? 'is-hidden':'') }} ">
+  <button id="close"
+          class="delete button is-small {{ notification.status | status }} "
           (click)="close()">✖</button>
-  <p class="pr-4">{{ notification.caption }}</p>
+  <p id="caption"
+     class="pr-4">{{ notification.caption }}</p>
 </aside>
