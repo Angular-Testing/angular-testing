@@ -1,13 +1,17 @@
 # Angular Testing
 
-Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://trainingit.es/curso-angular-testing/).
+Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://www.trainingit.es/index.php/producto/curso-angular-testing/).
 
 ### Reomendación de uso mientras estudias:
+
+> Code along
 
 Clona este proyecto y aplica los cambios sobre la rama `main` según lo explicado en los videos. También puedes hacer esto en una rama tuya.
 
 Visita las distintas ramas del proyecto para comprobar los cambios graduales
+
 [Ramas para cada video lección](https://github.com/Angular-Testing/angular-testing/branches)
+
 > Ejemplo: `git checkout 0.1-jasmine-karma`
 
 ---
