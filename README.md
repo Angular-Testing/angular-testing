@@ -2,7 +2,9 @@
 
 Aplicación de ejemplo para el [curso de Angular Testing de TrainingIT](https://www.trainingit.es/index.php/producto/curso-angular-testing/).
 
-### Reomendación de uso mientras estudias:
+> ⚠️ Mantén siempre iniciado el servidor API. Ejecuta `npm run api` en una terminal
+
+### Recomendación de uso mientras estudias:
 
 > Code along
 
@@ -29,6 +31,8 @@ Run `npm i` after clone or fork
 ## Workflows
 
 Run `npm start` for a dev server.
+
+Run `npm run api` for a dev only api server
 
 Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
