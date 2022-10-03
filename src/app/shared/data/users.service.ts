@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -11,18 +11,12 @@ export class UsersService {
   constructor(private http: HttpClient) {}
 
   getTokenByCredentials$(credentials: { email: string; password: string }): Observable<string> {
-    // password should be encrypted before sending to server
-    const params = new HttpParams()
-      .append('email', encodeURIComponent(credentials.email))
-      .append('password', encodeURIComponent(credentials.password));
     return this.http
-      .get<{ data: string }>(`${environment.apiHost}users/credentials`, { params })
-      .pipe(map(res => res.data));
+      .post<{ accessToken: string }>(`${environment.apiHost}login`, credentials)
+      .pipe(map(res => res.accessToken));
   }
 
   public getUserById$(userId: string): Observable<User> {
-    return this.http
-      .get<{ data: User }>(`${environment.apiHost}users/${userId}`)
-      .pipe(map(res => res.data));
+    return this.http.get<User>(`${environment.apiHost}users/${userId}`);
   }
 }
