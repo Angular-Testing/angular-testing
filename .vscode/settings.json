@@ -32,5 +32,6 @@
     "*": false
   },
   "window.zoomLevel": 2,
-  "editor.lineNumbers": "off"
+  "editor.lineNumbers": "off",
+  "cSpell.words": ["bulma"]
 }
