@@ -24,7 +24,8 @@
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "e2e:prod": "cypress run --config-file=cypress-prod.json"
+    "e2e:prod": "cypress run --config-file=cypress-prod.json",
+    "api": "json-server-auth ./database/db.json -r ./database/routes.json"
   },
   "private": true,
   "dependencies": {
