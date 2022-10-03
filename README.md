@@ -24,7 +24,7 @@ Visita las distintas ramas del proyecto para comprobar los cambios graduales
 
 This sample project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
-[Read CLI docs](https://github.com/angularbuilders/angular-budget/blob/main/docs/cli.md) to see how it was generated.
+[Read CLI docs](https://github.com/Angular-Testing/angular-testing/blob/main/docs/cli.md) to see how it was generated.
 
 Run `npm i` after clone or fork
 
@@ -71,6 +71,5 @@ Basic CRUD for a list of projects. Each one with dates, status and budgeting con
 
 ## Credits
 
-Cloned from [angular-budget](https://angularbuilders.github.io/angular-budget/)
+Cloned from [angular-budget](https://github.com/Angular-Testing/angular-testing/)
 Created by [Alberto Basalo](https://twitter.com/albertobasalo) to be used as a sample in his Angular Courses.
-Part of [Angular.builders](https://www.angular.builders)
