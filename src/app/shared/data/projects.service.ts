@@ -1,3 +1,4 @@
+import { SecurityService } from '@ab/global/security.service';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -8,12 +9,10 @@ import { Project } from './models/project.model';
   providedIn: 'root',
 })
 export class ProjectsService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private security: SecurityService) {}
 
   getProjects$(): Observable<Project[]> {
-    console.log('getProjects$');
     const url = `${environment.apiHost}projects/`;
-    console.log('url', url);
     return this.http.get<Project[]>(url);
   }
 
@@ -23,6 +22,7 @@ export class ProjectsService {
 
   postProject$(project: Project): Observable<Project> {
     project.id = this.createSlug(project.name);
+    project.userId = this.security.userId;
     return this.http.post<Project>(`${environment.apiHost}projects/`, project);
   }
 

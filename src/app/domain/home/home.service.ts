@@ -30,7 +30,6 @@ export class HomeService {
   }
 
   public loadProjectViews(): void {
-    console.log('loadProjectViews');
     this.store.setLoadingState(true);
     this.projects
       .getProjects$()

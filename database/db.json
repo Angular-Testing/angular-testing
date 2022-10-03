@@ -16,7 +16,7 @@
       "endDate": "2024-12-30T23:00:00.000Z",
       "budget": 500,
       "status": "active",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     },
     {
       "id": "conquer_mars",
@@ -25,34 +25,7 @@
       "startDate": "2021-12-31T23:00:00.000Z",
       "budget": 990,
       "status": "planned",
-      "ownerId": "world_admin"
-    },
-    {
-      "name": "Use servers",
-      "budget": 2000,
-      "startDate": "2022-10-03",
-      "endDate": 0,
-      "description": "",
-      "status": "planned",
-      "id": "6Fw5emV"
-    },
-    {
-      "name": "Use Slugs for ids",
-      "budget": 2000,
-      "startDate": "2022-10-17",
-      "endDate": 0,
-      "description": "",
-      "status": "planned",
-      "id": "use_slugs for ids"
-    },
-    {
-      "name": "Another Slug with 4 spaces between",
-      "budget": 2000,
-      "startDate": "2022-10-23",
-      "endDate": 0,
-      "description": "",
-      "status": "planned",
-      "id": "another_slug_with_4_spaces_between"
+      "userId": "world_admin"
     }
   ],
   "tasks": [
@@ -62,7 +35,7 @@
       "description": "A modified version of a current virus",
       "done": true,
       "projectId": "rule_the_world",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     },
     {
       "id": "deploy_the_virus",
@@ -70,7 +43,7 @@
       "description": "Release the virus to the environment on a cute pet",
       "done": true,
       "projectId": "rule_the_world",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     },
     {
       "id": "start_a-war",
@@ -78,7 +51,7 @@
       "description": "Start a war against the world",
       "done": false,
       "projectId": "rule_the_world",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     },
     {
       "id": "have_a_rocket",
@@ -86,7 +59,7 @@
       "description": "A very big and powerful rocket",
       "done": true,
       "projectId": "conquer_mars",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     },
     {
       "id": "have_a_spaceship",
@@ -94,7 +67,7 @@
       "description": "A modern spaceship",
       "done": false,
       "projectId": "conquer_mars",
-      "ownerId": "world_admin"
+      "userId": "world_admin"
     }
   ]
 }
