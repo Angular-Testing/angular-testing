@@ -55,6 +55,7 @@ export class SecurityService {
     const payload = token.split('.')[1];
     const decodedPayload = atob(payload);
     const user = JSON.parse(decodedPayload);
-    return user['id'];
+    console.log(user);
+    return user['sub'];
   }
 }

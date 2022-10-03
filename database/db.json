@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "id": "world_admin",
-      "name": "World Admin",
       "email": "admin@world.org",
-      "password": "S3cr3t"
+      "password": "$2a$10$lRC5Frpy434Pj1fSn2SnF.B3sMbCU6P19hWmIue66uK1/SxDCqW7e",
+      "id": "world_admin",
+      "name": "World Admin"
     }
   ],
   "projects": [
@@ -26,6 +26,33 @@
       "budget": 990,
       "status": "planned",
       "ownerId": "world_admin"
+    },
+    {
+      "name": "Use servers",
+      "budget": 2000,
+      "startDate": "2022-10-03",
+      "endDate": 0,
+      "description": "",
+      "status": "planned",
+      "id": "6Fw5emV"
+    },
+    {
+      "name": "Use Slugs for ids",
+      "budget": 2000,
+      "startDate": "2022-10-17",
+      "endDate": 0,
+      "description": "",
+      "status": "planned",
+      "id": "use_slugs for ids"
+    },
+    {
+      "name": "Another Slug with 4 spaces between",
+      "budget": 2000,
+      "startDate": "2022-10-23",
+      "endDate": 0,
+      "description": "",
+      "status": "planned",
+      "id": "another_slug_with_4_spaces_between"
     }
   ],
   "tasks": [

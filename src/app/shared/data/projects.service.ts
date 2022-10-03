@@ -11,7 +11,10 @@ export class ProjectsService {
   constructor(private http: HttpClient) {}
 
   getProjects$(): Observable<Project[]> {
-    return this.http.get<Project[]>(`${environment.apiHost}projects/`);
+    console.log('getProjects$');
+    const url = `${environment.apiHost}projects/`;
+    console.log('url', url);
+    return this.http.get<Project[]>(url);
   }
 
   getProjectById$(projectId: string): Observable<Project> {
@@ -19,6 +22,7 @@ export class ProjectsService {
   }
 
   postProject$(project: Project): Observable<Project> {
+    project.id = this.createSlug(project.name);
     return this.http.post<Project>(`${environment.apiHost}projects/`, project);
   }
 
@@ -28,5 +32,8 @@ export class ProjectsService {
 
   deleteProject$(projectId: string): Observable<void> {
     return this.http.delete<void>(`${environment.apiHost}projects/${projectId}`);
+  }
+  private createSlug(name: string) {
+    return name.toLowerCase().replace(/ /g, '_');
   }
 }

@@ -10,6 +10,16 @@ import { User } from './models/user.model';
 export class UsersService {
   constructor(private http: HttpClient) {}
 
+  postRegistration$(): Observable<User> {
+    const user = {
+      id: 'world_admin',
+      name: 'World Admin',
+      email: 'admin@world.org',
+      password: 'S3cr3t',
+    };
+    return this.http.post<User>(`${environment.apiHost}register/`, user);
+  }
+
   getTokenByCredentials$(credentials: { email: string; password: string }): Observable<string> {
     return this.http
       .post<{ accessToken: string }>(`${environment.apiHost}login`, credentials)
