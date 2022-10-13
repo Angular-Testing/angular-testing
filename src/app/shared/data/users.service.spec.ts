@@ -7,11 +7,11 @@ import {
 import { TestBed } from '@angular/core/testing';
 import { UsersService } from './users.service';
 
-describe('UsersService', () => {
+fdescribe('UsersService', () => {
   let service: UsersService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({ imports: [HttpClientTestingModule] });
     service = TestBed.inject(UsersService);
   });
 
@@ -24,7 +24,7 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
   let service: UsersService;
   let controller: HttpTestingController;
   let testRequest: TestRequest;
-  const remoteUrl = 'http://localhost:3000/users/';
+  const remoteUrl = 'http://localhost:3000/';
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
@@ -39,9 +39,10 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
     beforeEach(() => {
       service.getTokenByCredentials$(input).subscribe();
     });
-    it('THEN should send the credentials as parameters', () => {
-      const expected = `${remoteUrl}credentials?email=${input.email}&password=${input.password}`;
-      controller.expectOne(expected);
+    it('THEN should send the credentials as payload', () => {
+      const expectedUrl = `${remoteUrl}login`;
+      const requestMock = controller.expectOne(expectedUrl);
+      expect(requestMock.request.body).toBe(input);
     });
   });
 
@@ -57,7 +58,7 @@ fdescribe('GIVEN the UsersService isolated from remote server', () => {
           actual = err;
         },
       });
-      const expectedUrl = `${remoteUrl}not_found`;
+      const expectedUrl = `${remoteUrl}users/not_found`;
       testRequest = controller.expectOne(expectedUrl);
       testRequest.flush('User not found', { status: 404, statusText: 'Not Found' });
     });
